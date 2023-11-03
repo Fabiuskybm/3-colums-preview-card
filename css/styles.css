@@ -1,0 +1,227 @@
+:root {
+
+    /* Primary */
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /* Paragraphs */
+    --Very-light-gray: hsl(0, 0%, 95%); /* Background, Headings, Buttons */
+
+}
+
+/* font-family: 'Big Shoulders Display', sans-serif; */
+/* font-family: 'Lexend Deca', sans-serif; */
+
+
+
+/* General Configuration */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--Very-light-gray);
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CARDS DESIGN */
+
+/* General */
+
+.content {
+    height: 35rem;
+    width: 25rem;
+}
+
+.sedans {
+    background-color: var(--Bright-orange);
+    border-radius: 0.75rem 0.75rem 0 0;
+    margin-top: 2rem;
+}
+
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 0.75rem 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.body {
+    margin-left: 3.5rem;
+}
+
+
+/* Icons */
+
+.icons {
+    display: inline-block;
+    margin: 3.5rem 0 2.5rem 3.5rem;
+}
+
+.icons img {
+    width: 5rem;
+}
+
+
+/* Headigns & Text */
+
+.headings {
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.text {
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-right: 3.2rem;
+}
+
+
+/* Buttons Design */
+
+.footer {
+    margin: 3.5rem;
+}
+
+.button {
+    background-color: var(--Very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1.2rem 3rem 1.2rem 3rem;
+    border-radius: 4rem;
+}
+
+.button:hover {
+    color: var(--Very-light-gray);
+    border: 1px solid var(--Very-light-gray);
+}
+
+.btn1 {
+    color: var(--Bright-orange);
+}
+
+.btn1:hover {
+    background-color: var(--Bright-orange);
+}
+
+.btn2 {
+    color: var(--Dark-cyan);
+}
+
+.btn2:hover {
+    background-color: var(--Dark-cyan);
+}
+
+.btn3 {
+    color: var(--Very-dark-cyan);
+}
+
+.btn3:hover {
+    background-color: var(--Very-dark-cyan);
+}
+
+
+
+/* DESKTOP DESIGN */
+
+@media (min-width: 1440px) {
+
+
+    /* General */
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        flex-direction: row;
+    }
+
+    .content {
+        height: 50rem;
+        width: 35rem;
+    }
+
+    .sedans {
+        margin: 0;
+        border-radius: 0.75rem 0 0 0.75rem;
+    }
+
+    .luxury {
+        margin: 0;
+        border-radius: 0 0.75rem 0.75rem 0;
+    }
+
+    .luxury > .body {
+        margin-left: 3.5rem;
+    }
+
+    .luxury > .footer {
+        margin-left: 3.5rem;
+        margin-top: 8rem;
+    }
+
+
+    /* Icons */
+
+    .icons img {
+        width: 7rem;
+    }
+
+
+    /* Headigns & Text */
+
+    .headings {
+        font-size: 4rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        margin-right: 10rem;
+        line-height: 3rem;
+    }
+
+
+    /* Buttons Design */
+
+    .footer {
+        margin-top: 8rem;
+    }
+
+    .button {
+        font-size: 1.25rem;
+        padding: 1.6rem 3.5rem 1.6rem 3.5rem;
+    }
+
+}
